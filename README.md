@@ -25,7 +25,7 @@ This project followed a guided lab to deploy a Windows-based honeypot in Microso
 | Part 5 | Visualize attacker location with an attack map |
 
 Here is a visual representation of the lab:
-![Architecture](/images/architecture.png)
+![Architecture](./images/Architecture.png)
 
 ---
 
