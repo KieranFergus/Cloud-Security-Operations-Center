@@ -24,15 +24,18 @@ This project followed a guided lab to deploy a Windows-based honeypot in Microso
 | Part 4 | Enrich logs using a GeoIP watchlist |
 | Part 5 | Visualize attacker location with an attack map |
 
+Here is a visual representation of the lab:
+![Architecture](./images/architecture.png)
+
 ---
 
 ## Part 1: Deploying the Honeypot VM
 
-- Created a **Windows 10 VM** in Azure.
+- Created a Windows 10 VM in Azure.
 - Configured **Network Security Group (NSG)** to allow all inbound traffic.
 - Disabled Windows Firewall (`wf.msc` → Properties → Turn off all profiles).
 
-> ⚠️ VM costs can accumulate if left running 24/7. Shut down or delete when not in use.
+
 
 ---
 
