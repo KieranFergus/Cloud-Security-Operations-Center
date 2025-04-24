@@ -32,10 +32,11 @@ Here is a visual representation of the lab:
 ## Part 1: Deploying the Honeypot VM
 
 - Created a Windows 10 VM in Azure.
-- Configured **Network Security Group (NSG)** to allow all inbound traffic.
+- Configured Network Security Group (NSG) to allow all inbound traffic.
 - Disabled Windows Firewall (`wf.msc` → Properties → Turn off all profiles).
 
-
+Disabled the Windows Defender firewall within the Virtual Machine instance:
+![Firewall Rules](./images/VMFirewall)
 
 ---
 
