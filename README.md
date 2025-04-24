@@ -33,9 +33,9 @@ Here is a visual representation of the lab:
 
 - Created a Windows 10 VM in Azure.
 - Configured Network Security Group (NSG) to allow all inbound traffic.
-- Disabled Windows Firewall (`wf.msc` → Properties → Turn off all profiles).
-
-Disabled the Windows Defender firewall within the Virtual Machine instance:
+![](./images/FirewallRules.png)
+  
+- Disabled the Windows Defender firewall within the Virtual Machine instance (`wf.msc` → Properties → Turn off all profiles):
 ![Firewall Rules](./images/VMFirewall.png)
 
 ---
