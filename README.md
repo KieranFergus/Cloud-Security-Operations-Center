@@ -36,7 +36,7 @@ Here is a visual representation of the lab:
     - Network Security Group
  
       
-- Configured the Network Security Group (NSG) to allow all inbound traffic.
+- Configured the Network Security Group (NSG) to allow all inbound traffic to the virtual network and machine.
 ![](./images/FirewallRules.png)
   
 - Disabled the Windows Defender firewall within the Virtual Machine instance (`wf.msc` → Properties → Turn off all profiles):
@@ -49,6 +49,7 @@ Here is a visual representation of the lab:
 - Attempted local failed logins using fake user (e.g., `employee`).
 - Opened **Event Viewer → Security logs**, filtered for:
   - Event ID `4625` (failed login attempts)
+- Received over 40,000 login attempts in two hours
 
 Windows Security Log with failed brute force attempts:
 ![Security Log](./images/VMLogs.png)
