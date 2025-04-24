@@ -95,6 +95,6 @@ Applied `ipv4_lookup()` on attacker IPs to derive location data:
 - Used **Event Viewer** and **Azure Sentinel** to detect and visualize events.
 - Learned basic **KQL queries** for event filtering.
 - Enriched raw logs with external data (GeoIP) using **Watchlists**.
-- Visualized attack origin using **Sentinel Workbooks**.
+- Visualized common brute force attack origin points using **Sentinel Workbooks**.
 
 
