@@ -58,15 +58,11 @@ Windows Security Log with failed brute force attempts:
 
 ## Part 3: Log Forwarding & Sentinel Integration
 
-- Created a **Log Analytics Workspace (LAW)**.
+- Created a **Log Analytics Workspace (LAW)** and added it to the Resource Group.
 - Deployed **Azure Sentinel** and connected it to the LAW.
 - Enabled the **“Windows Security Events via AMA”** data connector.
 - Queried logs in Sentinel using KQL:
 
-```kql
-SecurityEvent
-| where EventID == 4625
-```
 
 ---
 
@@ -75,17 +71,10 @@ SecurityEvent
 - Imported a CSV (`geoip-summarized.csv`) as a **Sentinel Watchlist**:
   - Name: `geoip`
   - Search key: `network`
-- Applied `ipv4_lookup()` on attacker IPs to derive location data:
 
-```kql
-let GeoIPDB_FULL = _GetWatchlist("geoip");
-let WindowsEvents = SecurityEvent
-    | where IpAddress == "<attacker-IP>"
-    | where EventID == 4625
-    | order by TimeGenerated desc
-    | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network);
-WindowsEvents
-```
+Applied `ipv4_lookup()` on attacker IPs to derive location data:
+[Location Queries](./images/SentinelQuery.png)
+
 
 ---
 
