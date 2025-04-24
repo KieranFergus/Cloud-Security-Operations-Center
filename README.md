@@ -36,7 +36,7 @@ Here is a visual representation of the lab:
 - Disabled Windows Firewall (`wf.msc` → Properties → Turn off all profiles).
 
 Disabled the Windows Defender firewall within the Virtual Machine instance:
-![Firewall Rules](./images/VMFirewall)
+![Firewall Rules](./images/VMFirewall.png)
 
 ---
 
