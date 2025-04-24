@@ -73,7 +73,7 @@ Windows Security Log with failed brute force attempts:
   - Search key: `network`
 
 Applied `ipv4_lookup()` on attacker IPs to derive location data:
-[Location Queries](./images/SentinelQuery.png)
+![Location Queries](./images/SentinelQuery.png)
 
 
 ---
