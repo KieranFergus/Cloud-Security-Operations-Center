@@ -31,8 +31,13 @@ Here is a visual representation of the lab:
 
 ## Part 1: Deploying the Honeypot VM
 
-- Created a Windows 10 VM in Azure.
-- Configured Network Security Group (NSG) to allow all inbound traffic.
+- Created a Resource Group in the cloud via Azure with the following:
+    - Virtual Network
+    - Windows 10 VM
+    - Network Security Group
+ 
+      
+- Configured the Network Security Group (NSG) to allow all inbound traffic.
 ![](./images/FirewallRules.png)
   
 - Disabled the Windows Defender firewall within the Virtual Machine instance (`wf.msc` → Properties → Turn off all profiles):
@@ -42,10 +47,12 @@ Here is a visual representation of the lab:
 
 ## Part 2: Simulate & Observe Brute Force Logins
 
-- Attempted 3+ failed logins using fake user (e.g., `employee`).
-- Logged in successfully afterward.
+- Attempted local failed logins using fake user (e.g., `employee`).
 - Opened **Event Viewer → Security logs**, filtered for:
   - Event ID `4625` (failed login attempts)
+
+Windows Security Log with failed brute force attempts:
+![Security Log](./images/VMLogs.png)
 
 ---
 
