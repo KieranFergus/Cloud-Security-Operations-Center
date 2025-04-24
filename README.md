@@ -71,6 +71,7 @@ Windows Security Log with failed brute force attempts:
 - Imported a CSV (`geoip-summarized.csv`) as a **Sentinel Watchlist**:
   - Name: `geoip`
   - Search key: `network`
+![geoip](./images/geoip2.png)
 
 Applied `ipv4_lookup()` on attacker IPs to derive location data:
 ![Location Queries](./images/SentinelQuery.png)
