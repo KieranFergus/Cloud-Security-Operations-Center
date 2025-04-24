@@ -17,12 +17,11 @@ This project followed a guided lab to deploy a Windows-based honeypot in Microso
 ---
 
 ## Lab Summary
-
-| Part 1 | Create honeypot VM and expose services |
-| Part 2 | Observe failed login attempts and analyze raw Windows logs |
-| Part 3 | Forward logs to Azure Sentinel and query using KQL |
-| Part 4 | Enrich logs using a GeoIP watchlist |
-| Part 5 | Visualize attacker location with an attack map |
+- Part 1: Create honeypot VM and expose services 
+- Part 2: Observe failed login attempts and analyze raw Windows logs 
+- Part 3: Forward logs to Azure Sentinel and query using KQL 
+- Part 4: Enrich logs using a GeoIP watchlist 
+- Part 5: Visualize attacker location with an attack map 
 
 Here is a visual representation of the lab:
 ![Architecture](./images/Architecture.png)
