@@ -84,7 +84,7 @@ Applied `ipv4_lookup()` on attacker IPs to derive location data:
 - Deleted default visualizations and added a **Query + Map** element.
 - Imported JSON from `map.json` to visualize attacker IP geolocation.
 
-![Map](./images/Map.png)
+![Map](./images/Map2.png)
 
 ---
 
